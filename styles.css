@@ -5,13 +5,8 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-image: url(http://cdn23.us1.fansshare.com/photos/hdwallpaper/plain-backgrounds-light-green-website-background-hd-wallpaper-plain-888779177.jpg);
-  min-height: 100vh;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
+/*
 main {
   padding-top: 5em;
 }
@@ -55,17 +50,18 @@ h1 {
   font-size: 2em;
 }
 
-.about {
-  margin: 30px;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  color: beige;
+#about {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
-.about img {
-  margin: 10px;
-  width: 200px;
-  border-radius: 200px;
+#content {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .box {
@@ -77,6 +73,59 @@ h1 {
 }
 
 .grid {
+  width: 100vw;
+  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+#foto {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+*/
+
+.grid-box {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% 30% 30% 30%;
+  grid-template-areas:
+    "header header header header"
+    "content1 content2 content2 content2"
+    "content3 content3 content4 content4"
+    "content3 content3 content4 content4";
+}
+
+.box1 {
+  background-color: red;
+  grid-area: header;
+}
+
+.box2 {
+  background-color: green;
+  grid-area: content1;
+}
+
+.box2 img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.box3 {
+  background-color: yellow;
+  grid-area: content2;
+}
+.box4 {
+  background-color: blue;
+  grid-area: content3;
+}
+.box5 {
+  background-color: indianred;
+  grid-area: content4;
 }
