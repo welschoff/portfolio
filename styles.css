@@ -3,7 +3,48 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+}
+
+.navigation {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+
+.navigation a {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+header h1 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+header img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 10%;
+  border-radius: 50%;
+}
+
+.container-about {
+  position: absolute;
+  margin: 10rem;
+  text-align: center;
+  top: 15%;
+}
+
+.container-about img {
+  border-radius: 50%;
+  width: 200px;
 }
 
 /*
@@ -86,7 +127,10 @@ h1 {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-*/
+
+body {
+  background-color: bisque;
+}
 
 .grid-box {
   display: grid;
@@ -101,31 +145,39 @@ h1 {
     "content3 content3 content4 content4";
 }
 
-.box1 {
-  background-color: red;
+.nav {
+  background-color: white;
   grid-area: header;
 }
 
-.box2 {
-  background-color: green;
-  grid-area: content1;
+.box {
+  background: linear-gradient(to bottom right, blue, pink);
+
+  border: 2px solid;
+  border-color: black;
+  border-radius: 10px;
+  margin: 2em;
 }
 
-.box2 img {
+.img {
+  grid-area: content1;
+  align-self: center;
+  justify-self: center;
+}
+
+.img img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
 
-.box3 {
-  background-color: yellow;
+.about {
   grid-area: content2;
 }
-.box4 {
-  background-color: blue;
+.content1 {
   grid-area: content3;
 }
-.box5 {
-  background-color: indianred;
+.content2 {
   grid-area: content4;
 }
+*/
