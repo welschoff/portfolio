@@ -5,6 +5,114 @@
   margin: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(https://www.pngmagic.com/product_images/website-background-image-size-psd-vector-photo.jpg);
+  color: rgba(252, 255, 247, 0.646);
+}
+
+h1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+}
+
+.navigation {
+  display: flex;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  column-gap: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.portrait {
+  display: grid;
+  grid-area: b;
+  width: 20rem;
+  height: 20rem;
+  justify-self: center;
+  align-items: center;
+}
+
+.navigation a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(222, 148, 12, 0.865);
+  color: rgba(252, 255, 247, 0.646);
+  border-radius: 2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+a:hover {
+  color: rgba(128, 0, 128, 0.728);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 40% 30% 10%;
+  grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "d d e e"
+    "f f f f";
+  width: 100vw;
+  height: 105vh;
+}
+
+.about {
+  display: grid;
+  grid-area: c;
+  margin-right: 5rem;
+}
+
+div img {
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+}
+
+h2 {
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.interests-box {
+  display: grid;
+  grid-area: e;
+
+  width: 100%;
+  justify-self: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 2em;
+}
+
+.skills-box {
+  display: grid;
+  grid-area: d;
+
+  justify-content: center;
+  border-radius: 30px;
+  padding: 2em;
+}
+
+/*
 .navigation {
   position: fixed;
   top: 5%;
@@ -78,3 +186,5 @@ header h1 {
 p {
   padding-top: 1em;
 }
+
+*/
